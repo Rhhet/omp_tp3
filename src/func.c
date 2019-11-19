@@ -117,3 +117,14 @@ void saveGreyImage(const char *filename, grey_image_type *image) {
     }
     fclose(f);
 }
+
+/**********************************************************************/
+void clean_clrimg(color_image_type *clrimg) {   
+    free(clrimg->pixels);
+    free(clrimg);
+}
+
+void clean_gimg(grey_image_type *gimg) {
+    free(gimg->pixels);
+    free(gimg);
+}

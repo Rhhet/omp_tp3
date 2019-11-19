@@ -15,9 +15,13 @@ typedef struct grey_image_struct {
     unsigned char *pixels;
 } grey_image_type;
 
+
+
 color_image_type *loadColorImage(const char *filename);
 grey_image_type *createGreyImage(int width, int height);
 void saveGreyImage(const char *filename, grey_image_type *image);
 grey_image_type *loadGreyImage(const char *filename);
+void clean_clrimg(color_image_type *clrimg);  
+void clean_gimg(grey_image_type *gimg);
 
 #endif
