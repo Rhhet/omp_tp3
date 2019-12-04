@@ -2,6 +2,7 @@
 
 #include <stdlib.h>
 
+// Extracts the 3 * 3 matrix around pixel 'index' into ext_mat
 void extract_mat(const unsigned char *matrix, int width, int index, unsigned char *ext_mat) {
     for (int i = 0; i < EMB_CF_NB; i++) {
         if (i < 3) {            // first line

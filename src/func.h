@@ -1,6 +1,10 @@
 #ifndef FUNC_H
 #define FUNC_H
 
+// number of threads
+#define NB_THD 16
+
+
 typedef struct color_pixel_struct {
     unsigned char r, g, b;
 } color_pixel_type;
